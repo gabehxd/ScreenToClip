@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "screentoclip",
+  "version": "${version}",
+  "name": "ScreenToClip",
+  "authors": [
+    "gabeh"
+  ],
+  "contact": {
+    "issues": "https://github.com/gabehxd/ScreenToClip/issues",
+    "sources": "https://github.com/gabehxd/ScreenToClip.git"
+  },
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "livingroom.computer.screentoclip.fabric.ScreenToClipFabric"
+    ]
+  },
+  "mixins": [
+    "screentoclip.common.mixins.json",
+    "screentoclip.fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ">=${minecraft_version}"
+  }
+}

@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+issueTrackerURL = "https://github.com/gabehxd/ScreenToClip/issues"
+license = "MIT"
+
+[[mods]]
+modId = "screentoclip"
+version = "${version}"
+displayName = "ScreenToClip"
+authors = "gabeh"
+description = "Very lightweight screenshot to clipboard"
+logoFile = "assets/icon.png"
+updateJSONURL = "https://api.modrinth.com/updates/screentoclip/forge_updates.json?neoforge=only"
+displayURL = "https://modrinth.com/mod/screentoclip"
+
+[[dependencies.screentoclip]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.screentoclip]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.5,)"
+ordering = "NONE"
+side = "CLIENT"
+
+
+[[mixins]]
+config = "screentoclip.common.mixins.json"
