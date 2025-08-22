@@ -8,14 +8,15 @@
   ],
   "contact": {
     "issues": "https://github.com/gabehxd/ScreenToClip/issues",
-    "sources": "https://github.com/gabehxd/ScreenToClip.git"
+    "sources": "https://github.com/gabehxd/ScreenToClip.git",
+    "homepage": "https://modrinth.com/mod/screentoclip"
   },
   "license": "MIT",
   "icon": "assets/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "livingroom.computer.screentoclip.fabric.ScreenToClipFabric"
+      "computer.livingroom.screentoclip.fabric.ScreenToClipFabric"
     ]
   },
   "mixins": [
@@ -23,7 +24,7 @@
     "screentoclip.fabric.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
+    "fabricloader": ">=${fabric_loader_version}",
     "minecraft": ">=${minecraft_version}"
   }
 }

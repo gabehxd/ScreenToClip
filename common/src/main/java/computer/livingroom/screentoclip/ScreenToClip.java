@@ -1,4 +1,4 @@
-package livingroom.computer.screentoclip;
+package computer.livingroom.screentoclip;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,6 +1,6 @@
-package livingroom.computer.screentoclip.fabric;
+package computer.livingroom.screentoclip.fabric;
 
-import livingroom.computer.screentoclip.ScreenToClip;
+import computer.livingroom.screentoclip.ScreenToClip;
 import net.fabricmc.api.ClientModInitializer;
 
 public final class ScreenToClipFabric implements ClientModInitializer {

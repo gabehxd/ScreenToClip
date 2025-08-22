@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "livingroom.computer.screentoclip.mixin",
+  "package": "computer.livingroom.screentoclip.mixin",
   "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
   "client": [

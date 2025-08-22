@@ -1,7 +1,7 @@
-package livingroom.computer.screentoclip.fabric.mixin;
+package computer.livingroom.screentoclip.fabric.mixin;
 
 import com.mojang.blaze3d.platform.NativeImage;
-import livingroom.computer.screentoclip.HandleImage;
+import computer.livingroom.screentoclip.HandleImage;
 import net.minecraft.client.Screenshot;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Mixin;

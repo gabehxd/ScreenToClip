@@ -1,7 +1,7 @@
-package livingroom.computer.screentoclip.neoforge;
+package computer.livingroom.screentoclip.neoforge;
 
-import livingroom.computer.screentoclip.HandleImage;
-import livingroom.computer.screentoclip.ScreenToClip;
+import computer.livingroom.screentoclip.HandleImage;
+import computer.livingroom.screentoclip.ScreenToClip;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.ScreenshotEvent;
 import net.neoforged.neoforge.common.NeoForge;

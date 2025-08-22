@@ -1,4 +1,4 @@
-package livingroom.computer.screentoclip.mixin;
+package computer.livingroom.screentoclip.mixin;
 
 import net.minecraft.client.main.Main;
 import org.spongepowered.asm.mixin.Mixin;

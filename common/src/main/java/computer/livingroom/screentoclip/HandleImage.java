@@ -21,10 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-package livingroom.computer.screentoclip;
+package computer.livingroom.screentoclip;
 
 import com.mojang.blaze3d.platform.NativeImage;
-import livingroom.computer.screentoclip.mixin.NativeImagePointerAccessor;
+import computer.livingroom.screentoclip.mixin.NativeImagePointerAccessor;
 import net.minecraft.client.Minecraft;
 import org.jetbrains.annotations.NotNull;
 import org.lwjgl.system.MemoryUtil;
