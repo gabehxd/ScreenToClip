@@ -25,7 +25,6 @@ package computer.livingroom.screentoclip;
 
 import com.mojang.blaze3d.platform.NativeImage;
 import computer.livingroom.screentoclip.mixin.NativeImagePointerAccessor;
-import net.minecraft.client.Minecraft;
 import org.jetbrains.annotations.NotNull;
 import org.lwjgl.system.MemoryUtil;
 
@@ -38,10 +37,13 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.image.*;
 import java.nio.ByteBuffer;
 
+import static net.minecraft.Util.OS;
+import static net.minecraft.Util.getPlatform;
+
 public class HandleImage {
 
     public static void init() {
-        if (!Minecraft.ON_OSX) {
+        if (getPlatform() != OS.OSX) {
             // Test that the mixin was run properly
             // Ensure AWT is loaded by forcing loadLibraries() to be called, will cause a HeadlessException if someone else already loaded AWT
             try {
@@ -54,7 +56,7 @@ public class HandleImage {
 
 
     public static void handleScreenshotAWT(NativeImage img) {
-        if (Minecraft.ON_OSX) {
+        if (getPlatform() == OS.OSX) {
             return;
         }
 
@@ -76,7 +78,7 @@ public class HandleImage {
     }
 
     private static void handleScreenshotAWT(ByteBuffer byteBuffer, int width, int height, int components) {
-        if (Minecraft.ON_OSX) {
+        if (getPlatform() == OS.OSX) {
             return;
         }
 

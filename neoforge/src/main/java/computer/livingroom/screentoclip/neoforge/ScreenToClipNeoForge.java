@@ -2,11 +2,12 @@ package computer.livingroom.screentoclip.neoforge;
 
 import computer.livingroom.screentoclip.HandleImage;
 import computer.livingroom.screentoclip.ScreenToClip;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.ScreenshotEvent;
 import net.neoforged.neoforge.common.NeoForge;
 
-@Mod(ScreenToClip.MOD_ID)
+@Mod(value = ScreenToClip.MOD_ID, dist = Dist.CLIENT)
 public final class ScreenToClipNeoForge {
     public ScreenToClipNeoForge() {
         // Run our common setup.
